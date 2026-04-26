@@ -66,6 +66,18 @@ a:hover {
   max-width: 500px;
 }
 
+.projects-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  width: 250px;
+}
+
 @media (max-width: 600px) {
   .intro {
     flex-direction: column;
