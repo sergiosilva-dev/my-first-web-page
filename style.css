@@ -57,3 +57,22 @@ a:hover {
   align-items: center;
   gap: 20px;
 }
+
+.intro img {
+  margin: 0;
+}
+
+.intro p {
+  max-width: 500px;
+}
+
+@media (max-width: 600px) {
+  .intro {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .intro img {
+    margin-bottom: 15px;
+  }
+}
