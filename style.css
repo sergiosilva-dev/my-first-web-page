@@ -152,6 +152,14 @@ nav a:hover {
   color: var(--primary-hover);
 }
 
+nav a.active {
+  color: var(--primary);
+}
+
+nav a.active::after {
+  width: 100%;
+}
+
 .navbar {
   position: sticky;
   top: 0;
@@ -305,6 +313,10 @@ nav a:hover {
 
   nav a::after {
     background-color: var(--dark-primary);
+  }
+
+  nav a.active {
+    color: var(--dark-primary);
   }
 
   .btn {
