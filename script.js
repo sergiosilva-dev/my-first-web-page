@@ -51,3 +51,9 @@ const nav = document.querySelector("nav");
 toggleButton.addEventListener("click", () => {
   nav.classList.toggle("open");
 });
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    nav.classList.remove("open");
+  });
+});
