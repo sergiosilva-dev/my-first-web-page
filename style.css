@@ -30,18 +30,25 @@ section {
   border-radius: 10px;
   border-bottom: 1px solid #ddd;
   background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 p {
   line-height: 1.6;
   margin-bottom: 15px;
-  text-align: justify;
+  text-align: left;
 }
 
-h1,
-h2,
-h3 {
+h1 {
   text-align: center;
+}
+
+h2 {
+  text-align: left;
+}
+
+h3 {
+  text-align: left;
 }
 
 h1 {
@@ -74,11 +81,12 @@ a:hover {
 .intro {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
 }
 
 .intro img {
   margin: 0;
+  border-radius: 50%;
 }
 
 .intro p {
