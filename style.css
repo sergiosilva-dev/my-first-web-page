@@ -182,6 +182,15 @@ nav a.active::after {
   font-size: 20px;
 }
 
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: var(--text-main);
+  cursor: pointer;
+}
+
 .hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -263,6 +272,28 @@ nav a.active::after {
   }
 }
 
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 16px;
+  }
+
+  nav.open {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
 @media (max-width: 600px) {
   .hero {
     grid-template-columns: 1fr;
@@ -317,6 +348,10 @@ nav a.active::after {
 
   nav a.active {
     color: var(--dark-primary);
+  }
+
+  .menu-toggle {
+    color: var(--dark-text-main);
   }
 
   .btn {

@@ -44,3 +44,10 @@ const sectionObserver = new IntersectionObserver(
 document.querySelectorAll("section[id]").forEach((section) => {
   sectionObserver.observe(section);
 });
+
+const toggleButton = document.querySelector(".menu-toggle");
+const nav = document.querySelector("nav");
+
+toggleButton.addEventListener("click", () => {
+  nav.classList.toggle("open");
+});
