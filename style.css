@@ -30,9 +30,14 @@ section {
   border-radius: 10px;
   background-color: white;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
 }
 
-section:nth-child(even) {
+section:hover {
+  transform: translateY(-2px);
+}
+
+main section:nth-of-type(even) {
   background-color: #f9fbfd;
 }
 
@@ -121,19 +126,16 @@ a:hover {
 
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 25px;
 }
 
 .project-card {
   border: 1px solid #ddd;
   padding: 15px;
-  width: 250px;
   border-radius: 8px;
   background-color: white;
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .project-card:hover {
@@ -151,13 +153,56 @@ a:hover {
   .hero {
     grid-template-columns: 1fr;
     text-align: center;
+    gap: 20px;
   }
 
   .hero-text h2 {
     text-align: center;
   }
 
+  .hero-image img {
+    width: 160px;
+  }
+
   .projects-container {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #0f172a;
+    color: #e2e8f0;
+  }
+
+  section {
+    background-color: #1e293b;
+    box-shadow: none;
+  }
+
+  main section:nth-of-type(even) {
+    background-color: #172033;
+  }
+
+  a {
+    color: #38bdf8;
+  }
+
+  .btn {
+    background-color: #38bdf8;
+    color: #0f172a;
+  }
+
+  .btn:hover {
+    background-color: #0ea5e9;
+  }
+
+  .project-card {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+  }
+
+  h2 {
+    border-left-color: #38bdf8;
   }
 }
