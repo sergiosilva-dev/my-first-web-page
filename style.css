@@ -18,6 +18,10 @@
   --dark-text-main: #e2e8f0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -32,6 +36,10 @@ main {
   max-width: 1100px;
   margin: 0 auto;
   padding: 24px;
+}
+
+main {
+  padding-top: 24px;
 }
 
 img {
@@ -93,6 +101,37 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--bg-card);
+  border-bottom: 1px solid var(--bg-border);
+}
+
+.nav-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px 24px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 20px;
+}
+
+nav a {
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--primary-hover);
 }
 
 .hero {
@@ -213,6 +252,15 @@ a:hover {
 
   a {
     color: var(--dark-primary);
+  }
+
+  .navbar {
+    background-color: var(--dark-bg-card);
+    border-bottom: 1px solid var(--dark-bg-border);
+  }
+
+  nav a:hover {
+    color: var(--dark-primary-hover);
   }
 
   .btn {
