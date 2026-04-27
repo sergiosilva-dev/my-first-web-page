@@ -55,6 +55,7 @@ section {
   background-color: var(--bg-card);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s ease;
+  scroll-margin-top: 160px;
 }
 
 section:hover {
@@ -103,6 +104,35 @@ a:hover {
   text-decoration: underline;
 }
 
+nav a {
+  margin-left: 20px;
+  font-weight: 500;
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background-color: var(--primary);
+  transition: width 0.2s ease;
+}
+
+nav a:hover {
+  text-decoration: none;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+nav a:hover {
+  color: var(--primary-hover);
+}
+
 .navbar {
   position: sticky;
   top: 0;
@@ -123,15 +153,6 @@ a:hover {
 
 .logo {
   font-size: 20px;
-}
-
-nav a {
-  margin-left: 20px;
-  font-weight: 500;
-}
-
-nav a:hover {
-  color: var(--primary-hover);
 }
 
 .hero {
@@ -261,6 +282,10 @@ nav a:hover {
 
   nav a:hover {
     color: var(--dark-primary-hover);
+  }
+
+  nav a::after {
+    background-color: var(--dark-primary);
   }
 
   .btn {
