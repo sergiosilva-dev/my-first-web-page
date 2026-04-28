@@ -4,6 +4,9 @@ const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
+        const index = Array.from(sections).indexOf(entry.target);
+        entry.target.style.transitionDelay = `${index * 0.1}s`;
+
         entry.target.classList.add("show");
         observer.unobserve(entry.target);
       }
