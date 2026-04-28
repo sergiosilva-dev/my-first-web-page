@@ -22,6 +22,17 @@ html {
   scroll-behavior: smooth;
 }
 
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 4px;
+  background: var(--primary);
+  z-index: 9999;
+  transition: width 0.1s ease-out;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -37,6 +48,7 @@ main {
   margin: 0 auto;
   padding: 24px;
 }
+
 
 main {
   padding-top: 24px;
