@@ -44,7 +44,17 @@ This is my first personal portfolio project built from scratch to learn and prac
 
 ## 📸 Screenshots
 
-![Live Screenshot](assets/img/screenshot.png)
+### 🏠 Hero Section
+
+![Hero](assets/img/hero.png)
+
+### 💼 Projects Section
+
+![Projects](assets/img/projects.png)
+
+### 📬 Contact Section
+
+![Contact](assets/img/contact.png)
 
 ---
 
