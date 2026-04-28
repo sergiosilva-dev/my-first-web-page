@@ -266,6 +266,10 @@ nav a.active::after {
   flex-wrap: wrap;
 }
 
+.footer {
+  text-align: center;
+}
+
 @media (max-width: 900px) {
   .projects-container {
     grid-template-columns: repeat(2, 1fr);
