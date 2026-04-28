@@ -33,9 +33,11 @@
     <div class="nav-container">
       <h1 class="logo">Sergio</h1>
 
-      <button class="menu-toggle">☰</button>
+      <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
+        ☰
+      </button>
 
-      <nav>
+      <nav aria-label="Main navigation">
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
@@ -44,9 +46,9 @@
     </div>
   </header>
   <main>
-    <section class="hero">
+    <section class="hero" id="hero" aria-labelledby="hero-title">
       <div class="hero-text">
-        <h2>Hi, I'm Sergio 👋</h2>
+        <h2 id="hero-title">Hi, I'm Sergio 👋</h2>
         <p>
           Web development learner focused on building clean, responsive, and
           user-friendly websites using HTML and CSS.
@@ -54,11 +56,11 @@
         <a href="#projects" class="btn">View My Work</a>
       </div>
       <div class="hero-image">
-        <img src="assets/img/avatar.png" alt="Profile Photo" />
+        <img src="assets/img/avatar.png" alt="Sergio Silva profile avatar" />
       </div>
     </section>
-    <section id="about">
-      <h2>About</h2>
+    <section id="about" aria-labelledby="about-title">
+      <h2 id="about-title">About</h2>
       <p>
         I’m an aspiring web developer currently learning and practicing the
         fundamentals of front-end development. I enjoy turning ideas into real
@@ -81,8 +83,8 @@
         thoughtfully built.
       </p>
     </section>
-    <section id="skills">
-      <h2>Skills</h2>
+    <section id="skills" aria-labelledby="skills-title">
+      <h2 id="skills-title">Skills</h2>
       <ul>
         <li>HTML5</li>
         <li>CSS3</li>
@@ -94,11 +96,11 @@
         <li>Problem Solving & Debugging</li>
       </ul>
     </section>
-    <section id="projects">
-      <h2>Projects</h2>
+    <section id="projects" aria-labelledby="projects-title">
+      <h2 id="projects-title">Projects</h2>
       <div class="projects-container">
         <div class="project-card">
-          <img src="https://placehold.co/300x180" alt="Portfolio project preview">
+          <img src="https://placehold.co/300x180" alt="Preview of personal portfolio website project">
 
           <div class="project-content">
             <h3>Personal Portfolio Website</h3>
@@ -110,7 +112,7 @@
           </div>
         </div>
         <div class="project-card">
-          <img src="https://placehold.co/300x180" alt="Portfolio project preview">
+          <img src="https://placehold.co/300x180" alt="Preview of responsive layout practice project">
 
           <div class="project-content">
             <h3>Responsive Layout Practice</h3>
@@ -121,7 +123,7 @@
           </div>
         </div>
         <div class="project-card">
-          <img src="https://placehold.co/300x180" alt="Portfolio project preview">
+          <img src="https://placehold.co/300x180" alt="Preview of UI interaction experiments project">
 
           <div class="project-content">
             <h3>UI Interaction Experiments</h3>
@@ -133,8 +135,8 @@
         </div>
       </div>
     </section>
-    <section>
-      <h2>Resume</h2>
+    <section id="resume" aria-labelledby="resume-title">
+      <h2 id="resume-title">Resume</h2>
       <p>
         Motivated web development learner with a strong foundation in HTML and
         CSS. Experienced in building responsive and user-friendly web pages,
@@ -143,8 +145,8 @@
       </p>
       <a href="#" download>Download Resume</a>
     </section>
-    <section id="contact">
-      <h2>Contact</h2>
+    <section id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
       <div class="contact-links">
         <a href="tel:+3152261373">📞 Telephone</a>
         <a href="mailto:sergiosilvamarti@gmail.com">✉️ Email</a>
@@ -153,7 +155,9 @@
       </div>
     </section>
   </main>
-  <footer></footer>
+  <footer>
+    <p class="footer">© 2026 Sergio Silva. All rights reserved.</p>
+  </footer>
   <script src="script.js"></script>
 </body>
 
