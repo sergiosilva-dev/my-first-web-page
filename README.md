@@ -1,25 +1,72 @@
-# Personal Portfolio Website
+# 🌐 Personal Portfolio Website
 
-This is my first portfolio project built with HTML and CSS.
+This is my first personal portfolio project built from scratch to learn and practice **HTML, CSS, JavaScript, Git, and GitHub** following a structured development workflow.
 
-## Features
+## 🚀 Live Demo
 
-- Responsive layout
-- Dark mode support
+👉 https://sergiosilva-dev.github.io/my-first-web-page/
+
+---
+
+## ✨ Features
+
+- Responsive layout (mobile + desktop)
 - Sticky navigation with smooth scrolling
-- Project cards UI
-- Clean and modern design system
+- Scroll reveal animations using IntersectionObserver
+- Active navigation link highlighting on scroll
+- Mobile navigation menu with toggle and auto-close
+- Scroll progress indicator
+- Clean and modern UI design
+- Dark mode support (based on system preference)
 
-## Technologies
+---
+
+## 🛠️ Technologies Used
 
 - HTML5
 - CSS3 (Flexbox + Grid)
+- JavaScript (DOM manipulation + IntersectionObserver)
 - Git & GitHub
+- GitHub Pages (deployment)
 
-## Goal
+---
 
-This project is part of my journey to become a frontend developer and build real-world applications.
+## 📚 What I Learned
 
-## Live Preview
+- Structuring a real web project
+- Building responsive layouts
+- Implementing interactive UI with JavaScript
+- Using IntersectionObserver for performance-friendly animations
+- Managing code with Git branches and merges
+- Deploying a website using GitHub Pages
 
-Later
+---
+
+## 📸 Screenshots
+
+![Live Screenshot](assets/img/screenshot.png)
+
+---
+
+## 📬 Contact
+
+- 📧 Email: [sergiosilvamarti@gmail.com](mailto:sergiosilvamarti@gmail.com)
+- 💻 GitHub: https://github.com/sergiosilva-dev
+- 🔗 LinkedIn: https://linkedin.com/in/sergiosilva-dev
+
+---
+
+## ⚙️ How to Run Locally
+
+```bash
+git clone https://github.com/sergiosilva-dev/my-first-web-page.git
+cd my-first-web-page
+```
+
+Then open `index.html` in your browser.
+
+---
+
+## 🎯 Purpose
+
+This project is part of my learning journey to become a professional web developer, focusing on building real-world projects with clean code and structured workflows.
